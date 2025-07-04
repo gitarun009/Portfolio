@@ -6,6 +6,7 @@ import LeetCodeIcon from "@/components/ui/leetcode-icon";
 
 const ContactSection = () => {
   const handleDownloadResume = () => {
+    // Updated to use latest Google Drive resume link
     window.open('https://drive.google.com/uc?export=download&id=1xICG0n0QQ_TlxHau_kUfBoqCPlzYwFis', '_blank');
   };
 
