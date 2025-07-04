@@ -6,13 +6,7 @@ import LeetCodeIcon from "@/components/ui/leetcode-icon";
 
 const ContactSection = () => {
   const handleDownloadResume = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You'll need to add your resume file to the public folder
-    link.download = 'resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open('https://drive.google.com/uc?export=download&id=1REiG1qtOlWOibML-bqDJ0cKL1iPB9zOq', '_blank');
   };
 
   return (
