@@ -6,13 +6,7 @@ import LeetCodeIcon from "@/components/ui/leetcode-icon";
 
 const ContactSection = () => {
   const handleDownloadResume = () => {
-    // Create a temporary link element with cache-busting
-    const link = document.createElement('a');
-    link.href = `/resume.pdf?v=${Date.now()}`; // Add timestamp to prevent caching
-    link.download = 'Arun_Pratap_Singh_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open('https://drive.google.com/uc?export=download&id=1xICG0n0QQ_TlxHau_kUfBoqCPlzYwFis', '_blank');
   };
 
   return (
